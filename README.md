@@ -42,3 +42,35 @@ run in locked mode. Disable the RestoreLockedMode MSBuild property or pass an ex
   Failed to restore D:\code\lock-sln\proj-a\proj-a.csproj (in 99 ms).
   Restored D:\code\lock-sln\proj-b\proj-b.csproj (in 359 ms).
 ```
+
+## Suspected error
+
+If we carefully examin the [package lock file](https://github.com/EugeneKrapivin/locked-mode-restore-repro/blob/main/proj-a/packages.lock.json#L34) created for `proj-a` we will see an errornous listing of dependencies for the referenced `proj-b` project:
+
+```json
+"proj-b": {
+  "type": "Project",
+  "dependencies": {
+    "Newtonsoft.Json": "12.0.3",
+    "Newtonsoft.Json.Schema": "3.0.13",
+    "TaskTupleAwaiter": "[1.2.0, 2.0.0)",
+    "UrlBase64": "0.1.2",
+    "ZooKeeperNetEx": "3.4.12.4"
+  }
+}
+```
+
+However, we only take dependency on `UrlBase64` and `ZooKeeperNetEx` in the `csproj` for `proj-b`.
+If we manually delete:
+
+```json
+    "Newtonsoft.Json": "12.0.3",
+    "Newtonsoft.Json.Schema": "3.0.13",
+    "TaskTupleAwaiter": "[1.2.0, 2.0.0)",
+```
+
+The restore command in locked mode will succeed.
+
+### References
+
+https://github.com/NuGet/Home/issues/10074
