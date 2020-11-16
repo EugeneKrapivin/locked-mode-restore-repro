@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>proj_a</RootNamespace>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+
+  <ItemGroup Label="External">
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Newtonsoft.Json.Schema" />
+    <PackageReference Include="TaskTupleAwaiter" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\proj-b\proj-b.csproj" />
+  </ItemGroup>
+
+</Project>

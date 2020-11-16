@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "dependencies": {
+    ".NETFramework,Version=v4.7.2": {
+      "Newtonsoft.Json": {
+        "type": "Direct",
+        "requested": "[12.0.3, )",
+        "resolved": "12.0.3",
+        "contentHash": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg=="
+      },
+      "Newtonsoft.Json.Schema": {
+        "type": "Direct",
+        "requested": "[3.0.13, )",
+        "resolved": "3.0.13",
+        "contentHash": "pzMg9rlInZIyQQvHnmVgO2QfNsivd8fuuBKv7Yw1eV4EmqXLtG76sZBzjRbNqbYbsYnekIo++RSvkP1s7e8N4Q==",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2"
+        }
+      },
+      "TaskTupleAwaiter": {
+        "type": "Direct",
+        "requested": "[1.2.0, 2.0.0)",
+        "resolved": "1.2.0",
+        "contentHash": "t6UsS+PV/WzgAXZ+69UzT7tWK//eeXmDAmch6AJEg8D5MolZsm9/x/aR9XAqsS0TI0v0RBOH6CPNZbHTeFyzEg==",
+        "dependencies": {
+          "System.ValueTuple": "4.3.0"
+        }
+      },
+      "System.ValueTuple": {
+        "type": "Transitive",
+        "resolved": "4.3.0",
+        "contentHash": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg=="
+      },
+      "proj-b": {
+        "type": "Project",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Newtonsoft.Json.Schema": "3.0.13",
+          "TaskTupleAwaiter": "[1.2.0, 2.0.0)",
+          "UrlBase64": "0.1.2",
+          "ZooKeeperNetEx": "3.4.12.4"
+        }
+      },
+      "UrlBase64": {
+        "type": "CentralTransitive",
+        "requested": "[0.1.2, )",
+        "resolved": "0.1.2",
+        "contentHash": "wOePtm1cH6orDlm9mawJJNf7K6pL9/pr87RvC2BGH34RZWhR4+WA59NK53dF4TK8YpIE8qRLd3rACiQ6WO5aMg=="
+      },
+      "ZooKeeperNetEx": {
+        "type": "CentralTransitive",
+        "requested": "[3.4.12.4, )",
+        "resolved": "3.4.12.4",
+        "contentHash": "YECtByVSH7TRjQKplwOWiKyanCqYE5eEkGk5YtHJgsnbZ6+p1o0Gvs5RIsZLotiAVa6Niez1BJyKY/RDY/L6zg=="
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win7-x86": {}
+  }
+}

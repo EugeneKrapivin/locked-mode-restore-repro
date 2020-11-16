@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project>
+  <ItemGroup Label="External">
+    <PackageVersion Include="Newtonsoft.Json" Version="[12.0.3, )" />
+    <PackageVersion Include="Newtonsoft.Json.Schema" Version="[3.0.13, )" />
+    <PackageVersion Include="TaskTupleAwaiter" Version="[1.2.0, 2)" />
+    <PackageVersion Include="UrlBase64" Version="[0.1.2, )" />
+    <PackageVersion Include="ZooKeeperNetEx" Version="[3.4.12.4, )" />
+  </ItemGroup>
+</Project>
