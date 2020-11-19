@@ -4,10 +4,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>proj_b</RootNamespace>
-    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
-  <ItemGroup Label="External">
+  <ItemGroup>
     <PackageReference Include="UrlBase64" />
     <PackageReference Include="ZooKeeperNetEx" />
   </ItemGroup>
