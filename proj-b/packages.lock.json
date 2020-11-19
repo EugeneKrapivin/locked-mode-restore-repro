@@ -1,12 +1,12 @@
 {
-  "version": 2,
+  "version": 1,
   "dependencies": {
     ".NETStandard,Version=v2.0": {
       "NETStandard.Library": {
         "type": "Direct",
         "requested": "[2.0.3, )",
         "resolved": "2.0.3",
-        "contentHash": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+        "contentHash": "C2SNflgUB0Z8SSbdIqKVhcHZ7IBCUq6SYudL9IptCvPBGg75xlAXovXueSVSMr07xcNj6C/Y1svYU8WRhnQ/gA==",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
