@@ -90,6 +90,10 @@ will create `package.lock.json` files in all projects where its enabled.
 
 > **Note**: You can consider to use `--force-evaluate` flag to ensure that lock files are regenerated.
 
+### Sources on MSBuild and projects
+
+https://www.youtube.com/watch?v=5HEbsyU5E1g&ab_channel=Pusher
+
 ## Using a lock file
 
 Using a lock file to restore your dependencies could be done in 2 ways:
