@@ -1,6 +1,6 @@
 # Description
 
-This project shows how to centrally manage package versions using Nuget + MSBuild + target.props file.
+This project shows how to centrally manage package versions using Nuget + MSBuild + Directory.Build.target file.
 
 ## Repo description
 
