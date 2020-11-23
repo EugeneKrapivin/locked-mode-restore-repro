@@ -9,11 +9,11 @@ the repo consists of 2 projects:
 * `proj-a` - a net472 console project, with dependency on 3 packages (in csproj with no version) and a project reference on `proj-b`
 * `proj-b` - a netstandard2.0 library, with dependency on 2 packages (in csproj with no version, mutually exclusive to `proj-a` dependencies) with no project references.
 
-for both project CVPM is DISABLED and both project create package locks (`RestorePackagesWithLockFile` is set to true)
+for both project Centralized Package Version Management (CPVM) is DISABLED and both project create package locks (`RestorePackagesWithLockFile` is set to true)
 
 ## Centralized Package Version Management and How it works
 
-To create Centralized Package Version Management (CPVM) we have to know a little thing about how `.target` files are added to the build process.
+To create CPVM we have to know a little thing about how `.target` files are added to the build process.
 Target files contain directives of tasks to enable in the build process, example of such a task is running `dotnet restore` during a build process.
 We can use it, and the fact that target files are included into the build context only after the `csproj` and `build.props` are constructed to create CPVM.
 
