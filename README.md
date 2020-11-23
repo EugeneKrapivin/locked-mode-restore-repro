@@ -9,7 +9,7 @@ the repo consists of 2 projects:
 * `proj-a` - a net472 console project, with dependency on 3 packages (in csproj with no version) and a project reference on `proj-b`
 * `proj-b` - a netstandard2.0 library, with dependency on 2 packages (in csproj with no version, mutually exclusive to `proj-a` dependencies) with no project references.
 
-for both project Centralized Package Version Management (CPVM) is DISABLED and both project create package locks (`RestorePackagesWithLockFile` is set to true)
+for both projects Centralized Package Version Management (CPVM) is DISABLED and both project create package locks (`RestorePackagesWithLockFile` is set to true)
 
 ## Centralized Package Version Management and How it works
 
