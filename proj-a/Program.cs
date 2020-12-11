@@ -8,7 +8,7 @@ namespace proj_a
         static void Main(string[] args)
         {
             var c = new Class{
-                Message = "repro?!"
+                Message = "Did we make it?!"
             };
             Console.WriteLine(c.GetMessage());
         }
